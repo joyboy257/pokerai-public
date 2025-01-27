@@ -1,0 +1,537 @@
+2024-12-29 12:30:47,470 - Decision made by Kane: Hand=['D9', 'D5'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,471 - Decision made by Kane: Hand=['D3', 'HA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,472 - Decision made by Kane: Hand=['D3', 'HA'], Community=['H9', 'DJ', 'D4'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,475 - Decision made by Kane: Hand=['CT', 'HJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,475 - Decision made by Kane: Hand=['CT', 'HJ'], Community=['HA', 'D4', 'DT'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,478 - Decision made by Kane: Hand=['S7', 'D3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,478 - Decision made by Kane: Hand=['DJ', 'D3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,479 - Decision made by Kane: Hand=['DJ', 'D3'], Community=['C8', 'DQ', 'D9'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,481 - Decision made by Kane: Hand=['H4', 'D5'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,482 - Decision made by Kane: Hand=['S8', 'C3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,483 - Decision made by Kane: Hand=['HA', 'HJ'], Community=[], Hand Strength=2, Action=raise, Amount=970
+2024-12-29 12:30:47,484 - Decision made by Kane: Hand=['DQ', 'S5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,485 - Decision made by Kane: Hand=['DQ', 'S5'], Community=['HT', 'C5', 'DJ'], Hand Strength=2, Action=raise, Amount=1920
+2024-12-29 12:30:47,487 - Decision made by Kane: Hand=['C9', 'HT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,488 - Decision made by Kane: Hand=['H5', 'C3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,488 - Decision made by Kane: Hand=['CA', 'C2'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,489 - Decision made by Kane: Hand=['CA', 'C2'], Community=['D4', 'SQ', 'C8'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,491 - Decision made by Kane: Hand=['D7', 'CK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,491 - Decision made by Kane: Hand=['D7', 'CK'], Community=['C6', 'H5', 'H7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,492 - Decision made by Kane: Hand=['D7', 'CK'], Community=['C6', 'H5', 'H7', 'H4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,492 - Decision made by Kane: Hand=['D7', 'CK'], Community=['C6', 'H5', 'H7', 'H4', 'D9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,493 - Decision made by Kane: Hand=['CT', 'C4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,494 - Decision made by Kane: Hand=['H8', 'C4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,494 - Decision made by Kane: Hand=['SJ', 'D5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,495 - Decision made by Kane: Hand=['SJ', 'D5'], Community=['C4', 'D2', 'S4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,495 - Decision made by Kane: Hand=['SJ', 'D5'], Community=['C4', 'D2', 'S4', 'D6'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,495 - Decision made by Kane: Hand=['SJ', 'D5'], Community=['C4', 'D2', 'S4', 'D6', 'S9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,497 - Decision made by Kane: Hand=['H9', 'C3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,497 - Decision made by Kane: Hand=['CA', 'DQ'], Community=[], Hand Strength=2, Action=raise, Amount=910
+2024-12-29 12:30:47,498 - Decision made by Kane: Hand=['SK', 'S9'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,499 - Decision made by Kane: Hand=['SK', 'S9'], Community=['HT', 'DK', 'S4'], Hand Strength=2, Action=raise, Amount=1800
+2024-12-29 12:30:47,501 - Decision made by Kane: Hand=['H2', 'CT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,502 - Decision made by Kane: Hand=['C4', 'SQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,502 - Decision made by Kane: Hand=['C4', 'SQ'], Community=['DK', 'H5', 'D8'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,503 - Decision made by Kane: Hand=['D3', 'SJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,504 - Decision made by Kane: Hand=['D3', 'SJ'], Community=['CA', 'C2', 'ST'], Hand Strength=2, Action=raise, Amount=1940
+2024-12-29 12:30:47,505 - Decision made by Kane: Hand=['H6', 'CA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,505 - Decision made by Kane: Hand=['H6', 'CA'], Community=['SJ', 'CT', 'DJ'], Hand Strength=3, Action=raise, Amount=1900
+2024-12-29 12:30:47,506 - Decision made by Kane: Hand=['D9', 'S9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,507 - Decision made by Kane: Hand=['HJ', 'HQ'], Community=[], Hand Strength=2, Action=raise, Amount=1820
+2024-12-29 12:30:47,509 - Decision made by Kane: Hand=['DQ', 'C6'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,509 - Decision made by Kane: Hand=['DQ', 'C6'], Community=['S6', 'C9', 'CJ'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,512 - Decision made by Kane: Hand=['HQ', 'S6'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,512 - Decision made by Kane: Hand=['HQ', 'S6'], Community=['C8', 'CK', 'S8'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,514 - Decision made by Kane: Hand=['H4', 'S4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,515 - Decision made by Kane: Hand=['S5', 'D8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,516 - Decision made by Kane: Hand=['S8', 'H3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,516 - Decision made by Kane: Hand=['DT', 'HK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,517 - Decision made by Kane: Hand=['DT', 'HK'], Community=['CT', 'SJ', 'D9'], Hand Strength=2, Action=raise, Amount=930
+2024-12-29 12:30:47,518 - Decision made by Kane: Hand=['H3', 'HJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,518 - Decision made by Kane: Hand=['H3', 'HJ'], Community=['DA', 'C8', 'S4'], Hand Strength=2, Action=raise, Amount=1880
+2024-12-29 12:30:47,519 - Decision made by Kane: Hand=['H9', 'S2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,520 - Decision made by Kane: Hand=['D9', 'HQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,520 - Decision made by Kane: Hand=['D9', 'HQ'], Community=['H2', 'C9', 'CQ'], Hand Strength=2, Action=raise, Amount=1770
+2024-12-29 12:30:47,522 - Decision made by Kane: Hand=['S4', 'H9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,523 - Decision made by Kane: Hand=['D9', 'D2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,524 - Decision made by Kane: Hand=['D9', 'SJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,524 - Decision made by Kane: Hand=['D9', 'SJ'], Community=['C5', 'DK', 'S2'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,526 - Decision made by Kane: Hand=['D8', 'D4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,527 - Decision made by Kane: Hand=['CT', 'S7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,528 - Decision made by Kane: Hand=['HQ', 'S3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,528 - Decision made by Kane: Hand=['HQ', 'S3'], Community=['DQ', 'DT', 'D4'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,529 - Decision made by Kane: Hand=['S3', 'C2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,530 - Decision made by Kane: Hand=['H3', 'CJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,530 - Decision made by Kane: Hand=['H3', 'CJ'], Community=['C5', 'DT', 'D3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,530 - Decision made by Kane: Hand=['H3', 'CJ'], Community=['C5', 'DT', 'D3', 'CT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,531 - Decision made by Kane: Hand=['H3', 'CJ'], Community=['C5', 'DT', 'D3', 'CT', 'HT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,531 - Decision made by Kane: Hand=['SK', 'S3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,532 - Decision made by Kane: Hand=['SK', 'S3'], Community=['SA', 'H5', 'H8'], Hand Strength=2, Action=raise, Amount=1930
+2024-12-29 12:30:47,533 - Decision made by Kane: Hand=['D9', 'HT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,533 - Decision made by Kane: Hand=['C7', 'DQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,534 - Decision made by Kane: Hand=['C7', 'DQ'], Community=['DA', 'D9', 'D4'], Hand Strength=2, Action=raise, Amount=1860
+2024-12-29 12:30:47,535 - Decision made by Kane: Hand=['HT', 'HJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,535 - Decision made by Kane: Hand=['HT', 'HJ'], Community=['D6', 'SQ', 'DQ'], Hand Strength=3, Action=raise, Amount=1740
+2024-12-29 12:30:47,536 - Decision made by Kane: Hand=['S4', 'DA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,537 - Decision made by Kane: Hand=['S4', 'DA'], Community=['H3', 'S7', 'HQ'], Hand Strength=2, Action=raise, Amount=1500
+2024-12-29 12:30:47,539 - Decision made by Kane: Hand=['S7', 'DJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,539 - Decision made by Kane: Hand=['S7', 'DJ'], Community=['D8', 'SQ', 'D4'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,541 - Decision made by Kane: Hand=['D8', 'C4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,542 - Decision made by Kane: Hand=['C5', 'HK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,542 - Decision made by Kane: Hand=['C5', 'HK'], Community=['DJ', 'S5', 'CQ'], Hand Strength=3, Action=raise, Amount=960
+2024-12-29 12:30:47,545 - Decision made by Kane: Hand=['H7', 'D6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,545 - Decision made by Kane: Hand=['C6', 'H7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,546 - Decision made by Kane: Hand=['CT', 'D3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,546 - Decision made by Kane: Hand=['H6', 'C8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,547 - Decision made by Kane: Hand=['D5', 'SA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,548 - Decision made by Kane: Hand=['D5', 'SA'], Community=['SK', 'C6', 'C7'], Hand Strength=2, Action=raise, Amount=920
+2024-12-29 12:30:47,550 - Decision made by Kane: Hand=['HK', 'C8'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,550 - Decision made by Kane: Hand=['HK', 'C8'], Community=['H7', 'DK', 'CK'], Hand Strength=3, Action=raise, Amount=980
+2024-12-29 12:30:47,552 - Decision made by Kane: Hand=['SQ', 'D3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,553 - Decision made by Kane: Hand=['SQ', 'D3'], Community=['D5', 'S7', 'HT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,553 - Decision made by Kane: Hand=['SQ', 'D3'], Community=['D5', 'S7', 'HT', 'H4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,554 - Decision made by Kane: Hand=['SQ', 'D3'], Community=['D5', 'S7', 'HT', 'H4', 'H8'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,554 - Decision made by Kane: Hand=['C7', 'S9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,555 - Decision made by Kane: Hand=['HQ', 'ST'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,555 - Decision made by Kane: Hand=['HQ', 'ST'], Community=['S9', 'H8', 'S2'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,556 - Decision made by Kane: Hand=['HQ', 'ST'], Community=['S9', 'H8', 'S2', 'CA'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,558 - Decision made by Kane: Hand=['C2', 'CK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,558 - Decision made by Kane: Hand=['C2', 'CK'], Community=['HK', 'C5', 'H8'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,560 - Decision made by Kane: Hand=['S4', 'S3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,561 - Decision made by Kane: Hand=['SK', 'D5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,561 - Decision made by Kane: Hand=['SK', 'D5'], Community=['H7', 'D7', 'CQ'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,564 - Decision made by Kane: Hand=['CA', 'H6'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,564 - Decision made by Kane: Hand=['CA', 'H6'], Community=['D8', 'D7', 'DK'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,566 - Decision made by Kane: Hand=['DJ', 'SA'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,569 - Decision made by Kane: Hand=['S3', 'DA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,569 - Decision made by Kane: Hand=['S3', 'DA'], Community=['D9', 'H6', 'S9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,569 - Decision made by Kane: Hand=['S3', 'DA'], Community=['D9', 'H6', 'S9', 'SA'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,572 - Decision made by Kane: Hand=['DA', 'CT'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,572 - Decision made by Kane: Hand=['DA', 'CT'], Community=['D9', 'CJ', 'H5'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,574 - Decision made by Kane: Hand=['C2', 'ST'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,575 - Decision made by Kane: Hand=['CT', 'H8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,575 - Decision made by Kane: Hand=['DJ', 'HK'], Community=[], Hand Strength=2, Action=raise, Amount=970
+2024-12-29 12:30:47,578 - Decision made by Kane: Hand=['CA', 'HQ'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,580 - Decision made by Kane: Hand=['CJ', 'C4'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,580 - Decision made by Kane: Hand=['CJ', 'C4'], Community=['H5', 'CQ', 'C5'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,583 - Decision made by Kane: Hand=['S5', 'S3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,583 - Decision made by Kane: Hand=['S4', 'H2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,584 - Decision made by Kane: Hand=['H5', 'HQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,584 - Decision made by Kane: Hand=['H5', 'HQ'], Community=['D5', 'S3', 'S8'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,585 - Decision made by Kane: Hand=['H5', 'HQ'], Community=['D5', 'S3', 'S8', 'H7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,585 - Decision made by Kane: Hand=['H5', 'HQ'], Community=['D5', 'S3', 'S8', 'H7', 'CQ'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,586 - Decision made by Kane: Hand=['D7', 'S5'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,587 - Decision made by Kane: Hand=['D3', 'CQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,587 - Decision made by Kane: Hand=['D3', 'CQ'], Community=['C7', 'H5', 'CT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,588 - Decision made by Kane: Hand=['D3', 'CQ'], Community=['C7', 'H5', 'CT', 'C4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,588 - Decision made by Kane: Hand=['D3', 'CQ'], Community=['C7', 'H5', 'CT', 'C4', 'H9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,589 - Decision made by Kane: Hand=['D9', 'H4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,589 - Decision made by Kane: Hand=['CT', 'H8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,590 - Decision made by Kane: Hand=['S7', 'HJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,590 - Decision made by Kane: Hand=['S7', 'HJ'], Community=['C6', 'C7', 'HK'], Hand Strength=2, Action=raise, Amount=1860
+2024-12-29 12:30:47,592 - Decision made by Kane: Hand=['CT', 'C5'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,592 - Decision made by Kane: Hand=['S4', 'H9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,594 - Decision made by Kane: Hand=['HA', 'D3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,594 - Decision made by Kane: Hand=['HA', 'D3'], Community=['D9', 'D8', 'S9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,595 - Decision made by Kane: Hand=['HA', 'D3'], Community=['D9', 'D8', 'S9', 'C9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,595 - Decision made by Kane: Hand=['HA', 'D3'], Community=['D9', 'D8', 'S9', 'C9', 'SK'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,597 - Decision made by Kane: Hand=['C6', 'H2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,598 - Decision made by Kane: Hand=['H5', 'H6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,599 - Decision made by Kane: Hand=['DA', 'DT'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,599 - Decision made by Kane: Hand=['DA', 'DT'], Community=['DK', 'S6', 'DJ'], Hand Strength=3, Action=raise, Amount=950
+2024-12-29 12:30:47,600 - Decision made by Kane: Hand=['D8', 'HQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,600 - Decision made by Kane: Hand=['D8', 'HQ'], Community=['S4', 'DQ', 'HK'], Hand Strength=3, Action=raise, Amount=1920
+2024-12-29 12:30:47,602 - Decision made by Kane: Hand=['HJ', 'SQ'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,605 - Decision made by Kane: Hand=['H9', 'C7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,605 - Decision made by Kane: Hand=['S6', 'H9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,606 - Decision made by Kane: Hand=['HJ', 'C8'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,606 - Decision made by Kane: Hand=['HJ', 'C8'], Community=['CA', 'CT', 'C4'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,608 - Decision made by Kane: Hand=['C3', 'D9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,609 - Decision made by Kane: Hand=['S9', 'CQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,609 - Decision made by Kane: Hand=['S9', 'CQ'], Community=['S5', 'C8', 'CT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,610 - Decision made by Kane: Hand=['S9', 'CQ'], Community=['S5', 'C8', 'CT', 'DJ'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,611 - Decision made by Kane: Hand=['D4', 'CJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,611 - Decision made by Kane: Hand=['D4', 'CJ'], Community=['D6', 'S8', 'C9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,612 - Decision made by Kane: Hand=['D4', 'CJ'], Community=['D6', 'S8', 'C9', 'HA'], Hand Strength=2, Action=raise, Amount=1940
+2024-12-29 12:30:47,613 - Decision made by Kane: Hand=['H7', 'S2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,613 - Decision made by Kane: Hand=['DA', 'H5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,614 - Decision made by Kane: Hand=['DA', 'H5'], Community=['DT', 'S9', 'S3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,614 - Decision made by Kane: Hand=['DA', 'H5'], Community=['DT', 'S9', 'S3', 'DJ'], Hand Strength=2, Action=raise, Amount=1890
+2024-12-29 12:30:47,616 - Decision made by Kane: Hand=['HT', 'C6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,617 - Decision made by Kane: Hand=['H2', 'S2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,618 - Decision made by Kane: Hand=['CK', 'HT'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,618 - Decision made by Kane: Hand=['CK', 'HT'], Community=['H9', 'D4', 'SK'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,619 - Decision made by Kane: Hand=['CK', 'H6'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,619 - Decision made by Kane: Hand=['CK', 'H6'], Community=['S3', 'HA', 'SJ'], Hand Strength=3, Action=raise, Amount=1920
+2024-12-29 12:30:47,621 - Decision made by Kane: Hand=['C9', 'C3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,621 - Decision made by Kane: Hand=['H2', 'SQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,621 - Decision made by Kane: Hand=['H2', 'SQ'], Community=['CT', 'CA', 'H5'], Hand Strength=2, Action=raise, Amount=1840
+2024-12-29 12:30:47,623 - Decision made by Kane: Hand=['C3', 'D9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,623 - Decision made by Kane: Hand=['CQ', 'DJ'], Community=[], Hand Strength=2, Action=raise, Amount=1700
+2024-12-29 12:30:47,624 - Decision made by Kane: Hand=['D6', 'DA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,625 - Decision made by Kane: Hand=['D6', 'DA'], Community=['S8', 'CQ', 'H4'], Hand Strength=2, Action=raise, Amount=1380
+2024-12-29 12:30:47,626 - Decision made by Kane: Hand=['S8', 'C7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,627 - Decision made by Kane: Hand=['HK', 'S3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,628 - Decision made by Kane: Hand=['HK', 'S3'], Community=['HQ', 'H8', 'HJ'], Hand Strength=3, Action=raise, Amount=980
+2024-12-29 12:30:47,630 - Decision made by Kane: Hand=['SA', 'C6'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,631 - Decision made by Kane: Hand=['SA', 'C6'], Community=['C2', 'D6', 'HQ'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,633 - Decision made by Kane: Hand=['S4', 'CA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,633 - Decision made by Kane: Hand=['S4', 'CA'], Community=['HK', 'CJ', 'DJ'], Hand Strength=4, Action=raise, Amount=980
+2024-12-29 12:30:47,635 - Decision made by Kane: Hand=['S8', 'DJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,636 - Decision made by Kane: Hand=['S8', 'DJ'], Community=['H9', 'S7', 'CJ'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,638 - Decision made by Kane: Hand=['DT', 'S8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,639 - Decision made by Kane: Hand=['S2', 'S4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,639 - Decision made by Kane: Hand=['C9', 'CA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,640 - Decision made by Kane: Hand=['C9', 'CA'], Community=['H6', 'ST', 'SJ'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,641 - Decision made by Kane: Hand=['SJ', 'C3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,641 - Decision made by Kane: Hand=['SJ', 'C3'], Community=['SQ', 'D9', 'DQ'], Hand Strength=3, Action=raise, Amount=1920
+2024-12-29 12:30:47,643 - Decision made by Kane: Hand=['H9', 'HQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,644 - Decision made by Kane: Hand=['H9', 'HQ'], Community=['DA', 'D2', 'CA'], Hand Strength=3, Action=raise, Amount=980
+2024-12-29 12:30:47,646 - Decision made by Kane: Hand=['D7', 'DT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,647 - Decision made by Kane: Hand=['H9', 'H6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,647 - Decision made by Kane: Hand=['D5', 'HT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,648 - Decision made by Kane: Hand=['D6', 'CT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,649 - Decision made by Kane: Hand=['S5', 'HA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,649 - Decision made by Kane: Hand=['S5', 'HA'], Community=['D3', 'C4', 'S7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,649 - Decision made by Kane: Hand=['S5', 'HA'], Community=['D3', 'C4', 'S7', 'H3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,650 - Decision made by Kane: Hand=['S5', 'HA'], Community=['D3', 'C4', 'S7', 'H3', 'S9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,650 - Decision made by Kane: Hand=['SA', 'H7'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,651 - Decision made by Kane: Hand=['SA', 'H7'], Community=['S5', 'DA', 'H6'], Hand Strength=2, Action=raise, Amount=940
+2024-12-29 12:30:47,652 - Decision made by Kane: Hand=['C4', 'S2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,652 - Decision made by Kane: Hand=['C9', 'DJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,653 - Decision made by Kane: Hand=['C9', 'DJ'], Community=['SK', 'ST', 'SQ'], Hand Strength=3, Action=raise, Amount=1880
+2024-12-29 12:30:47,655 - Decision made by Kane: Hand=['S4', 'C7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,656 - Decision made by Kane: Hand=['HQ', 'CQ'], Community=[], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,657 - Decision made by Kane: Hand=['HA', 'C3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,657 - Decision made by Kane: Hand=['HA', 'C3'], Community=['H3', 'H7', 'H6'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,657 - Decision made by Kane: Hand=['HA', 'C3'], Community=['H3', 'H7', 'H6', 'ST'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,658 - Decision made by Kane: Hand=['HA', 'C3'], Community=['H3', 'H7', 'H6', 'ST', 'S4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,659 - Decision made by Kane: Hand=['ST', 'C3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,659 - Decision made by Kane: Hand=['C9', 'H4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,660 - Decision made by Kane: Hand=['S9', 'CQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,660 - Decision made by Kane: Hand=['S9', 'CQ'], Community=['SJ', 'CJ', 'SQ'], Hand Strength=4, Action=raise, Amount=1930
+2024-12-29 12:30:47,662 - Decision made by Kane: Hand=['C2', 'C7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,663 - Decision made by Kane: Hand=['SJ', 'HT'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,663 - Decision made by Kane: Hand=['SJ', 'HT'], Community=['CJ', 'C7', 'D7'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,664 - Decision made by Kane: Hand=['S6', 'H8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,665 - Decision made by Kane: Hand=['HJ', 'CQ'], Community=[], Hand Strength=2, Action=raise, Amount=1940
+2024-12-29 12:30:47,666 - Decision made by Kane: Hand=['H4', 'HK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,667 - Decision made by Kane: Hand=['H4', 'HK'], Community=['D4', 'CT', 'D7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,667 - Decision made by Kane: Hand=['H4', 'HK'], Community=['D4', 'CT', 'D7', 'HJ'], Hand Strength=2, Action=raise, Amount=1860
+2024-12-29 12:30:47,668 - Decision made by Kane: Hand=['C6', 'H2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,669 - Decision made by Kane: Hand=['SA', 'H8'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,669 - Decision made by Kane: Hand=['SA', 'H8'], Community=['D9', 'C2', 'HK'], Hand Strength=2, Action=raise, Amount=1730
+2024-12-29 12:30:47,671 - Decision made by Kane: Hand=['HT', 'C7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,672 - Decision made by Kane: Hand=['H2', 'H6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,673 - Decision made by Kane: Hand=['SA', 'CT'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,673 - Decision made by Kane: Hand=['SA', 'CT'], Community=['S2', 'S8', 'HT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,673 - Decision made by Kane: Hand=['SA', 'CT'], Community=['S2', 'S8', 'HT', 'H7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,674 - Decision made by Kane: Hand=['SA', 'CT'], Community=['S2', 'S8', 'HT', 'H7', 'S4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,674 - Decision made by Kane: Hand=['C3', 'S4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,675 - Decision made by Kane: Hand=['DA', 'D3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,675 - Decision made by Kane: Hand=['DA', 'D3'], Community=['D5', 'C6', 'D4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,676 - Decision made by Kane: Hand=['DA', 'D3'], Community=['D5', 'C6', 'D4', 'H4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,676 - Decision made by Kane: Hand=['DA', 'D3'], Community=['D5', 'C6', 'D4', 'H4', 'S2'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,677 - Decision made by Kane: Hand=['C9', 'CQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,677 - Decision made by Kane: Hand=['C9', 'CQ'], Community=['HQ', 'S5', 'SJ'], Hand Strength=3, Action=raise, Amount=980
+2024-12-29 12:30:47,680 - Decision made by Kane: Hand=['C7', 'C2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,680 - Decision made by Kane: Hand=['HA', 'C4'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,681 - Decision made by Kane: Hand=['HA', 'C4'], Community=['H8', 'S3', 'CQ'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,683 - Decision made by Kane: Hand=['H8', 'CA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,683 - Decision made by Kane: Hand=['H8', 'CA'], Community=['SQ', 'H3', 'H7'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,685 - Decision made by Kane: Hand=['D4', 'HT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,686 - Decision made by Kane: Hand=['C8', 'S3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,687 - Decision made by Kane: Hand=['ST', 'S2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,687 - Decision made by Kane: Hand=['S5', 'S9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,688 - Decision made by Kane: Hand=['CQ', 'C3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,688 - Decision made by Kane: Hand=['CQ', 'C3'], Community=['H4', 'D3', 'HT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,689 - Decision made by Kane: Hand=['CQ', 'C3'], Community=['H4', 'D3', 'HT', 'D5'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,689 - Decision made by Kane: Hand=['CQ', 'C3'], Community=['H4', 'D3', 'HT', 'D5', 'S7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,690 - Decision made by Kane: Hand=['S8', 'CK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,690 - Decision made by Kane: Hand=['S8', 'CK'], Community=['H6', 'C7', 'HQ'], Hand Strength=2, Action=raise, Amount=900
+2024-12-29 12:30:47,691 - Decision made by Kane: Hand=['H3', 'C8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,692 - Decision made by Kane: Hand=['SA', 'C3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,692 - Decision made by Kane: Hand=['SA', 'C3'], Community=['H8', 'DK', 'S5'], Hand Strength=2, Action=raise, Amount=1800
+2024-12-29 12:30:47,693 - Decision made by Kane: Hand=['SA', 'D2'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,694 - Decision made by Kane: Hand=['SA', 'D2'], Community=['S8', 'H9', 'S6'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,694 - Decision made by Kane: Hand=['SA', 'D2'], Community=['S8', 'H9', 'S6', 'C2'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,695 - Decision made by Kane: Hand=['SA', 'D2'], Community=['S8', 'H9', 'S6', 'C2', 'H6'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,695 - Decision made by Kane: Hand=['HJ', 'HA'], Community=[], Hand Strength=2, Action=raise, Amount=1620
+2024-12-29 12:30:47,698 - Decision made by Kane: Hand=['C8', 'HJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,698 - Decision made by Kane: Hand=['C8', 'HJ'], Community=['DT', 'D4', 'H3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,698 - Decision made by Kane: Hand=['C8', 'HJ'], Community=['DT', 'D4', 'H3', 'H8'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,699 - Decision made by Kane: Hand=['C8', 'HJ'], Community=['DT', 'D4', 'H3', 'H8', 'DK'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,701 - Decision made by Kane: Hand=['CJ', 'H9'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,701 - Decision made by Kane: Hand=['CJ', 'H9'], Community=['C9', 'SJ', 'S6'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,704 - Decision made by Kane: Hand=['ST', 'CT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,704 - Decision made by Kane: Hand=['D4', 'DQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,705 - Decision made by Kane: Hand=['D4', 'DQ'], Community=['S8', 'ST', 'HT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,705 - Decision made by Kane: Hand=['D4', 'DQ'], Community=['S8', 'ST', 'HT', 'S2'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,705 - Decision made by Kane: Hand=['D4', 'DQ'], Community=['S8', 'ST', 'HT', 'S2', 'D8'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,706 - Decision made by Kane: Hand=['S4', 'H4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,707 - Decision made by Kane: Hand=['HK', 'C6'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,707 - Decision made by Kane: Hand=['HK', 'C6'], Community=['ST', 'CK', 'DT'], Hand Strength=2, Action=raise, Amount=920
+2024-12-29 12:30:47,708 - Decision made by Kane: Hand=['D5', 'S9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,709 - Decision made by Kane: Hand=['C7', 'S8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,710 - Decision made by Kane: Hand=['D7', 'SQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,710 - Decision made by Kane: Hand=['D7', 'SQ'], Community=['C2', 'H5', 'H2'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,710 - Decision made by Kane: Hand=['D7', 'SQ'], Community=['C2', 'H5', 'H2', 'DT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,711 - Decision made by Kane: Hand=['D7', 'SQ'], Community=['C2', 'H5', 'H2', 'DT', 'SK'], Hand Strength=2, Action=raise, Amount=1830
+2024-12-29 12:30:47,713 - Decision made by Kane: Hand=['C6', 'C7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,713 - Decision made by Kane: Hand=['HQ', 'C3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,714 - Decision made by Kane: Hand=['HQ', 'C3'], Community=['HK', 'S3', 'ST'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,716 - Decision made by Kane: Hand=['D8', 'S4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,717 - Decision made by Kane: Hand=['D4', 'SJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,717 - Decision made by Kane: Hand=['D4', 'SJ'], Community=['C6', 'HQ', 'H2'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,718 - Decision made by Kane: Hand=['H6', 'S8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,719 - Decision made by Kane: Hand=['D6', 'D2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,719 - Decision made by Kane: Hand=['DQ', 'D9'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,720 - Decision made by Kane: Hand=['DQ', 'D9'], Community=['D7', 'H8', 'C9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,720 - Decision made by Kane: Hand=['DQ', 'D9'], Community=['D7', 'H8', 'C9', 'C3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,721 - Decision made by Kane: Hand=['DQ', 'D9'], Community=['D7', 'H8', 'C9', 'C3', 'ST'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,721 - Decision made by Kane: Hand=['D3', 'D7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,722 - Decision made by Kane: Hand=['H9', 'HK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,722 - Decision made by Kane: Hand=['H9', 'HK'], Community=['H6', 'D4', 'DT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,723 - Decision made by Kane: Hand=['H9', 'HK'], Community=['H6', 'D4', 'DT', 'SJ'], Hand Strength=2, Action=raise, Amount=1920
+2024-12-29 12:30:47,724 - Decision made by Kane: Hand=['HQ', 'D8'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,724 - Decision made by Kane: Hand=['HQ', 'D8'], Community=['C3', 'SA', 'SK'], Hand Strength=3, Action=raise, Amount=1860
+2024-12-29 12:30:47,725 - Decision made by Kane: Hand=['H9', 'D4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,726 - Decision made by Kane: Hand=['C4', 'DJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,726 - Decision made by Kane: Hand=['C4', 'DJ'], Community=['H9', 'S9', 'HJ'], Hand Strength=2, Action=raise, Amount=1720
+2024-12-29 12:30:47,728 - Decision made by Kane: Hand=['D3', 'D9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,729 - Decision made by Kane: Hand=['S7', 'C4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,730 - Decision made by Kane: Hand=['CT', 'HA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,730 - Decision made by Kane: Hand=['CT', 'HA'], Community=['CK', 'D9', 'C3'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,732 - Decision made by Kane: Hand=['CQ', 'HK'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,735 - Decision made by Kane: Hand=['SK', 'C5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,735 - Decision made by Kane: Hand=['SK', 'C5'], Community=['C2', 'D9', 'H3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,735 - Decision made by Kane: Hand=['SK', 'C5'], Community=['C2', 'D9', 'H3', 'S3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,736 - Decision made by Kane: Hand=['SK', 'C5'], Community=['C2', 'D9', 'H3', 'S3', 'CT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,736 - Decision made by Kane: Hand=['H9', 'S7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,737 - Decision made by Kane: Hand=['C7', 'DK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,738 - Decision made by Kane: Hand=['C7', 'DK'], Community=['D6', 'C2', 'CJ'], Hand Strength=2, Action=raise, Amount=990
+2024-12-29 12:30:47,739 - Decision made by Kane: Hand=['S6', 'S9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,740 - Decision made by Kane: Hand=['C8', 'H6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,741 - Decision made by Kane: Hand=['S7', 'H7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,742 - Decision made by Kane: Hand=['C7', 'D5'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,742 - Decision made by Kane: Hand=['S4', 'S2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,743 - Decision made by Kane: Hand=['D5', 'C2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,743 - Decision made by Kane: Hand=['CQ', 'H5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,744 - Decision made by Kane: Hand=['CQ', 'H5'], Community=['CA', 'C2', 'DT'], Hand Strength=2, Action=raise, Amount=900
+2024-12-29 12:30:47,746 - Decision made by Kane: Hand=['D3', 'DA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,746 - Decision made by Kane: Hand=['D3', 'DA'], Community=['CK', 'D9', 'S9'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,749 - Decision made by Kane: Hand=['HA', 'C5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,749 - Decision made by Kane: Hand=['HA', 'C5'], Community=['SA', 'S2', 'S4'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,751 - Decision made by Kane: Hand=['ST', 'D6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,752 - Decision made by Kane: Hand=['SA', 'S3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,752 - Decision made by Kane: Hand=['SA', 'S3'], Community=['D9', 'C2', 'CT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,753 - Decision made by Kane: Hand=['SA', 'S3'], Community=['D9', 'C2', 'CT', 'H3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,753 - Decision made by Kane: Hand=['SA', 'S3'], Community=['D9', 'C2', 'CT', 'H3', 'HT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,754 - Decision made by Kane: Hand=['D5', 'CK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,754 - Decision made by Kane: Hand=['D5', 'CK'], Community=['D7', 'DT', 'CA'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,757 - Decision made by Kane: Hand=['ST', 'S4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,757 - Decision made by Kane: Hand=['C2', 'D9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,758 - Decision made by Kane: Hand=['SA', 'C7'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,758 - Decision made by Kane: Hand=['SA', 'C7'], Community=['H7', 'D5', 'H3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,759 - Decision made by Kane: Hand=['SA', 'C7'], Community=['H7', 'D5', 'H3', 'HJ'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,761 - Decision made by Kane: Hand=['HT', 'S9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,762 - Decision made by Kane: Hand=['C9', 'C5'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,762 - Decision made by Kane: Hand=['D4', 'H2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,763 - Decision made by Kane: Hand=['DJ', 'C2'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,763 - Decision made by Kane: Hand=['DJ', 'C2'], Community=['HJ', 'H3', 'SA'], Hand Strength=3, Action=raise, Amount=930
+2024-12-29 12:30:47,764 - Decision made by Kane: Hand=['D3', 'S2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,765 - Decision made by Kane: Hand=['H2', 'D7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,766 - Decision made by Kane: Hand=['SJ', 'H9'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,766 - Decision made by Kane: Hand=['SJ', 'H9'], Community=['C2', 'CA', 'S3'], Hand Strength=2, Action=raise, Amount=1850
+2024-12-29 12:30:47,767 - Decision made by Kane: Hand=['DT', 'HQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,767 - Decision made by Kane: Hand=['DT', 'HQ'], Community=['CJ', 'CA', 'D2'], Hand Strength=3, Action=raise, Amount=1720
+2024-12-29 12:30:47,768 - Decision made by Kane: Hand=['S4', 'D9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,769 - Decision made by Kane: Hand=['SA', 'D5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,769 - Decision made by Kane: Hand=['SA', 'D5'], Community=['S9', 'CQ', 'CJ'], Hand Strength=3, Action=raise, Amount=1440
+2024-12-29 12:30:47,772 - Decision made by Kane: Hand=['D9', 'H3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,772 - Decision made by Kane: Hand=['HQ', 'CK'], Community=[], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,773 - Decision made by Kane: Hand=['H4', 'DT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,774 - Decision made by Kane: Hand=['CJ', 'H4'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,774 - Decision made by Kane: Hand=['CJ', 'H4'], Community=['HJ', 'C9', 'C6'], Hand Strength=2, Action=raise, Amount=1920
+2024-12-29 12:30:47,776 - Decision made by Kane: Hand=['S2', 'H6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,777 - Decision made by Kane: Hand=['C2', 'SK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,777 - Decision made by Kane: Hand=['C2', 'SK'], Community=['ST', 'S2', 'CQ'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,779 - Decision made by Kane: Hand=['CT', 'C3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,780 - Decision made by Kane: Hand=['C4', 'C5'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,781 - Decision made by Kane: Hand=['SA', 'D7'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,781 - Decision made by Kane: Hand=['SA', 'D7'], Community=['S7', 'CT', 'D6'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,781 - Decision made by Kane: Hand=['SA', 'D7'], Community=['S7', 'CT', 'D6', 'D5'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,782 - Decision made by Kane: Hand=['SA', 'D7'], Community=['S7', 'CT', 'D6', 'D5', 'S6'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,783 - Decision made by Kane: Hand=['D4', 'S9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,783 - Decision made by Kane: Hand=['H8', 'HJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,784 - Decision made by Kane: Hand=['H8', 'HJ'], Community=['HT', 'C9', 'D4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,784 - Decision made by Kane: Hand=['H8', 'HJ'], Community=['HT', 'C9', 'D4', 'S2'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,784 - Decision made by Kane: Hand=['H8', 'HJ'], Community=['HT', 'C9', 'D4', 'S2', 'DA'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,785 - Decision made by Kane: Hand=['H2', 'DA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,786 - Decision made by Kane: Hand=['H2', 'DA'], Community=['D9', 'C6', 'C5'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,786 - Decision made by Kane: Hand=['H2', 'DA'], Community=['D9', 'C6', 'C5', 'DJ'], Hand Strength=2, Action=raise, Amount=1940
+2024-12-29 12:30:47,788 - Decision made by Kane: Hand=['CQ', 'HJ'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,791 - Decision made by Kane: Hand=['D6', 'C4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,791 - Decision made by Kane: Hand=['DT', 'HQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,791 - Decision made by Kane: Hand=['DT', 'HQ'], Community=['D8', 'DQ', 'CJ'], Hand Strength=3, Action=raise, Amount=960
+2024-12-29 12:30:47,793 - Decision made by Kane: Hand=['S9', 'CJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,793 - Decision made by Kane: Hand=['S9', 'CJ'], Community=['DT', 'CA', 'HJ'], Hand Strength=3, Action=raise, Amount=1940
+2024-12-29 12:30:47,795 - Decision made by Kane: Hand=['SA', 'S4'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,796 - Decision made by Kane: Hand=['SA', 'S4'], Community=['H6', 'D6', 'HA'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,798 - Decision made by Kane: Hand=['S5', 'S3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,798 - Decision made by Kane: Hand=['ST', 'S7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,799 - Decision made by Kane: Hand=['SQ', 'H6'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,799 - Decision made by Kane: Hand=['SQ', 'H6'], Community=['ST', 'DJ', 'S3'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,802 - Decision made by Kane: Hand=['D9', 'DQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,802 - Decision made by Kane: Hand=['D9', 'DQ'], Community=['H4', 'SK', 'CQ'], Hand Strength=3, Action=raise, Amount=980
+2024-12-29 12:30:47,804 - Decision made by Kane: Hand=['S3', 'SQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,805 - Decision made by Kane: Hand=['S3', 'SQ'], Community=['H6', 'CT', 'H3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,805 - Decision made by Kane: Hand=['S3', 'SQ'], Community=['H6', 'CT', 'H3', 'S9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,805 - Decision made by Kane: Hand=['S3', 'SQ'], Community=['H6', 'CT', 'H3', 'S9', 'S6'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,806 - Decision made by Kane: Hand=['C2', 'HT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,807 - Decision made by Kane: Hand=['HA', 'CQ'], Community=[], Hand Strength=2, Action=raise, Amount=970
+2024-12-29 12:30:47,808 - Decision made by Kane: Hand=['D2', 'S7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,809 - Decision made by Kane: Hand=['S6', 'H6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,809 - Decision made by Kane: Hand=['CQ', 'H4'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,809 - Decision made by Kane: Hand=['CQ', 'H4'], Community=['HK', 'SA', 'HJ'], Hand Strength=4, Action=raise, Amount=1890
+2024-12-29 12:30:47,811 - Decision made by Kane: Hand=['C6', 'DT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,811 - Decision made by Kane: Hand=['S8', 'CJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,812 - Decision made by Kane: Hand=['S8', 'CJ'], Community=['D5', 'SJ', 'DQ'], Hand Strength=3, Action=raise, Amount=1780
+2024-12-29 12:30:47,814 - Decision made by Kane: Hand=['CT', 'C8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,814 - Decision made by Kane: Hand=['S5', 'SQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,815 - Decision made by Kane: Hand=['S5', 'SQ'], Community=['SK', 'DK', 'C8'], Hand Strength=3, Action=raise, Amount=960
+2024-12-29 12:30:47,817 - Decision made by Kane: Hand=['CA', 'H4'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,817 - Decision made by Kane: Hand=['CA', 'H4'], Community=['H8', 'H9', 'DA'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,819 - Decision made by Kane: Hand=['HK', 'SA'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,822 - Decision made by Kane: Hand=['S2', 'SQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,822 - Decision made by Kane: Hand=['S2', 'SQ'], Community=['CT', 'HA', 'S8'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,824 - Decision made by Kane: Hand=['H5', 'HA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,825 - Decision made by Kane: Hand=['H5', 'HA'], Community=['DJ', 'DA', 'S2'], Hand Strength=3, Action=raise, Amount=980
+2024-12-29 12:30:47,827 - Decision made by Kane: Hand=['C7', 'C3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,828 - Decision made by Kane: Hand=['HQ', 'H7'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,828 - Decision made by Kane: Hand=['HQ', 'H7'], Community=['D2', 'HJ', 'CJ'], Hand Strength=3, Action=raise, Amount=960
+2024-12-29 12:30:47,829 - Decision made by Kane: Hand=['SA', 'SQ'], Community=[], Hand Strength=2, Action=raise, Amount=1960
+2024-12-29 12:30:47,831 - Decision made by Kane: Hand=['D7', 'C4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,832 - Decision made by Kane: Hand=['H5', 'CK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,832 - Decision made by Kane: Hand=['H5', 'CK'], Community=['HJ', 'H7', 'D2'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,834 - Decision made by Kane: Hand=['SK', 'D6'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,835 - Decision made by Kane: Hand=['SK', 'D6'], Community=['C8', 'C4', 'DK'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,837 - Decision made by Kane: Hand=['SQ', 'CA'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,839 - Decision made by Kane: Hand=['ST', 'H9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,840 - Decision made by Kane: Hand=['DJ', 'SA'], Community=[], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,841 - Decision made by Kane: Hand=['HJ', 'D3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,841 - Decision made by Kane: Hand=['HJ', 'D3'], Community=['S2', 'SA', 'C2'], Hand Strength=2, Action=raise, Amount=1940
+2024-12-29 12:30:47,844 - Decision made by Kane: Hand=['H5', 'C9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,844 - Decision made by Kane: Hand=['D9', 'HT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,845 - Decision made by Kane: Hand=['H5', 'HQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,845 - Decision made by Kane: Hand=['H5', 'HQ'], Community=['C4', 'DQ', 'C6'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,846 - Decision made by Kane: Hand=['C3', 'HQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,847 - Decision made by Kane: Hand=['C3', 'HQ'], Community=['D7', 'S3', 'HT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,847 - Decision made by Kane: Hand=['C3', 'HQ'], Community=['D7', 'S3', 'HT', 'CQ'], Hand Strength=2, Action=raise, Amount=1920
+2024-12-29 12:30:47,849 - Decision made by Kane: Hand=['HT', 'C5'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,850 - Decision made by Kane: Hand=['H8', 'D6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,850 - Decision made by Kane: Hand=['CQ', 'S8'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,851 - Decision made by Kane: Hand=['CQ', 'S8'], Community=['HQ', 'D6', 'C9'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,852 - Decision made by Kane: Hand=['S3', 'H8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,852 - Decision made by Kane: Hand=['SQ', 'S3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,853 - Decision made by Kane: Hand=['SQ', 'S3'], Community=['C7', 'DJ', 'C4'], Hand Strength=2, Action=raise, Amount=1910
+2024-12-29 12:30:47,854 - Decision made by Kane: Hand=['C7', 'CT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,855 - Decision made by Kane: Hand=['DJ', 'HJ'], Community=[], Hand Strength=2, Action=raise, Amount=1850
+2024-12-29 12:30:47,857 - Decision made by Kane: Hand=['DA', 'CK'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,859 - Decision made by Kane: Hand=['S7', 'SA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,859 - Decision made by Kane: Hand=['S7', 'SA'], Community=['HA', 'D7', 'C3'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,862 - Decision made by Kane: Hand=['S7', 'C6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,862 - Decision made by Kane: Hand=['S9', 'SK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,863 - Decision made by Kane: Hand=['S9', 'SK'], Community=['S2', 'D3', 'HK'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,864 - Decision made by Kane: Hand=['C6', 'S9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,864 - Decision made by Kane: Hand=['H9', 'C2'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,865 - Decision made by Kane: Hand=['S3', 'C6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,865 - Decision made by Kane: Hand=['DT', 'CQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,866 - Decision made by Kane: Hand=['DT', 'CQ'], Community=['DQ', 'C2', 'S8'], Hand Strength=2, Action=raise, Amount=1890
+2024-12-29 12:30:47,868 - Decision made by Kane: Hand=['C7', 'S4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,869 - Decision made by Kane: Hand=['S6', 'HQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,869 - Decision made by Kane: Hand=['S6', 'HQ'], Community=['C4', 'H5', 'CJ'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,870 - Decision made by Kane: Hand=['D7', 'H9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,871 - Decision made by Kane: Hand=['S5', 'DT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,872 - Decision made by Kane: Hand=['HQ', 'S8'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,872 - Decision made by Kane: Hand=['HQ', 'S8'], Community=['DJ', 'D3', 'HT'], Hand Strength=2, Action=raise, Amount=1910
+2024-12-29 12:30:47,874 - Decision made by Kane: Hand=['H9', 'H4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,875 - Decision made by Kane: Hand=['S5', 'CK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,875 - Decision made by Kane: Hand=['S5', 'CK'], Community=['HA', 'D9', 'S3'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,876 - Decision made by Kane: Hand=['HA', 'H6'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,877 - Decision made by Kane: Hand=['HA', 'H6'], Community=['C2', 'D6', 'H7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,877 - Decision made by Kane: Hand=['HA', 'H6'], Community=['C2', 'D6', 'H7', 'C7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,877 - Decision made by Kane: Hand=['HA', 'H6'], Community=['C2', 'D6', 'H7', 'C7', 'D3'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,878 - Decision made by Kane: Hand=['SQ', 'D9'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,880 - Decision made by Kane: Hand=['S9', 'CA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,881 - Decision made by Kane: Hand=['S9', 'CA'], Community=['DT', 'SJ', 'DJ'], Hand Strength=3, Action=raise, Amount=980
+2024-12-29 12:30:47,883 - Decision made by Kane: Hand=['DJ', 'DK'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,885 - Decision made by Kane: Hand=['C6', 'CK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,885 - Decision made by Kane: Hand=['C6', 'CK'], Community=['DK', 'S8', 'H8'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,888 - Decision made by Kane: Hand=['C9', 'S4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,888 - Decision made by Kane: Hand=['SQ', 'C3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,889 - Decision made by Kane: Hand=['SQ', 'C3'], Community=['S5', 'C9', 'D4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,889 - Decision made by Kane: Hand=['SQ', 'C3'], Community=['S5', 'C9', 'D4', 'DA'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,890 - Decision made by Kane: Hand=['S4', 'DT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,891 - Decision made by Kane: Hand=['H7', 'D6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,891 - Decision made by Kane: Hand=['C5', 'D3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,892 - Decision made by Kane: Hand=['H7', 'DK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,892 - Decision made by Kane: Hand=['H7', 'DK'], Community=['S5', 'HA', 'H4'], Hand Strength=2, Action=raise, Amount=1890
+2024-12-29 12:30:47,895 - Decision made by Kane: Hand=['H3', 'H8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,895 - Decision made by Kane: Hand=['CA', 'DA'], Community=[], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,896 - Decision made by Kane: Hand=['S7', 'S5'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,897 - Decision made by Kane: Hand=['DA', 'S7'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,897 - Decision made by Kane: Hand=['DA', 'S7'], Community=['HJ', 'C8', 'HQ'], Hand Strength=3, Action=raise, Amount=1920
+2024-12-29 12:30:47,898 - Decision made by Kane: Hand=['HQ', 'H3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,899 - Decision made by Kane: Hand=['HQ', 'H3'], Community=['C9', 'D4', 'HT'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,899 - Decision made by Kane: Hand=['HQ', 'H3'], Community=['C9', 'D4', 'HT', 'S8'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,899 - Decision made by Kane: Hand=['HQ', 'H3'], Community=['C9', 'D4', 'HT', 'S8', 'C7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,900 - Decision made by Kane: Hand=['SA', 'ST'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,901 - Decision made by Kane: Hand=['SA', 'ST'], Community=['D9', 'D5', 'DK'], Hand Strength=2, Action=raise, Amount=1840
+2024-12-29 12:30:47,903 - Decision made by Kane: Hand=['C3', 'CQ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,903 - Decision made by Kane: Hand=['C3', 'CQ'], Community=['SK', 'C4', 'CJ'], Hand Strength=3, Action=raise, Amount=980
+2024-12-29 12:30:47,905 - Decision made by Kane: Hand=['HK', 'H5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,906 - Decision made by Kane: Hand=['HK', 'H5'], Community=['D9', 'H4', 'H6'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,906 - Decision made by Kane: Hand=['HK', 'H5'], Community=['D9', 'H4', 'H6', 'S5'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,906 - Decision made by Kane: Hand=['HK', 'H5'], Community=['D9', 'H4', 'H6', 'S5', 'C7'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,907 - Decision made by Kane: Hand=['CQ', 'D3'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,907 - Decision made by Kane: Hand=['CQ', 'D3'], Community=['D2', 'CK', 'SK'], Hand Strength=3, Action=raise, Amount=960
+2024-12-29 12:30:47,910 - Decision made by Kane: Hand=['D6', 'C6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,910 - Decision made by Kane: Hand=['HJ', 'C4'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,911 - Decision made by Kane: Hand=['HJ', 'C4'], Community=['SA', 'S9', 'D5'], Hand Strength=2, Action=raise, Amount=960
+2024-12-29 12:30:47,913 - Decision made by Kane: Hand=['S8', 'D6'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,913 - Decision made by Kane: Hand=['S9', 'D7'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,914 - Decision made by Kane: Hand=['CJ', 'ST'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,914 - Decision made by Kane: Hand=['CJ', 'ST'], Community=['S4', 'D3', 'C5'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,915 - Decision made by Kane: Hand=['CJ', 'ST'], Community=['S4', 'D3', 'C5', 'C4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,915 - Decision made by Kane: Hand=['CJ', 'ST'], Community=['S4', 'D3', 'C5', 'C4', 'C9'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,916 - Decision made by Kane: Hand=['C9', 'H4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,917 - Decision made by Kane: Hand=['CJ', 'C7'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,917 - Decision made by Kane: Hand=['CJ', 'C7'], Community=['D2', 'SK', 'S6'], Hand Strength=2, Action=raise, Amount=920
+2024-12-29 12:30:47,919 - Decision made by Kane: Hand=['D3', 'H4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,920 - Decision made by Kane: Hand=['CJ', 'HQ'], Community=[], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,922 - Decision made by Kane: Hand=['H4', 'C3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,922 - Decision made by Kane: Hand=['DT', 'S9'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,923 - Decision made by Kane: Hand=['H5', 'DJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,923 - Decision made by Kane: Hand=['H5', 'DJ'], Community=['D3', 'S8', 'D2'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,924 - Decision made by Kane: Hand=['H5', 'DJ'], Community=['D3', 'S8', 'D2', 'HA'], Hand Strength=2, Action=raise, Amount=950
+2024-12-29 12:30:47,925 - Decision made by Kane: Hand=['S3', 'DT'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,926 - Decision made by Kane: Hand=['H9', 'HJ'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,926 - Decision made by Kane: Hand=['H9', 'HJ'], Community=['D7', 'S9', 'CQ'], Hand Strength=2, Action=raise, Amount=1910
+2024-12-29 12:30:47,928 - Decision made by Kane: Hand=['ST', 'H3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,929 - Decision made by Kane: Hand=['H4', 'HK'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,929 - Decision made by Kane: Hand=['H4', 'HK'], Community=['C2', 'H6', 'D5'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,929 - Decision made by Kane: Hand=['H4', 'HK'], Community=['C2', 'H6', 'D5', 'S2'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,930 - Decision made by Kane: Hand=['H4', 'HK'], Community=['C2', 'H6', 'D5', 'S2', 'C4'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,931 - Decision made by Kane: Hand=['HA', 'SA'], Community=[], Hand Strength=2, Action=raise, Amount=1000
+2024-12-29 12:30:47,933 - Decision made by Kane: Hand=['CJ', 'D5'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,933 - Decision made by Kane: Hand=['CJ', 'D5'], Community=['HQ', 'H9', 'H8'], Hand Strength=2, Action=raise, Amount=980
+2024-12-29 12:30:47,936 - Decision made by Kane: Hand=['S5', 'D8'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,936 - Decision made by Kane: Hand=['H6', 'D3'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,937 - Decision made by Kane: Hand=['D6', 'H4'], Community=[], Hand Strength=0, Action=fold, Amount=0
+2024-12-29 12:30:47,937 - Decision made by Kane: Hand=['D5', 'CA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,938 - Decision made by Kane: Hand=['D5', 'CA'], Community=['C9', 'D9', 'S8'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,938 - Decision made by Kane: Hand=['D5', 'CA'], Community=['C9', 'D9', 'S8', 'HK'], Hand Strength=2, Action=raise, Amount=930
+2024-12-29 12:30:47,939 - Decision made by Kane: Hand=['H8', 'CA'], Community=[], Hand Strength=1, Action=call, Amount=20
+2024-12-29 12:30:47,940 - Decision made by Kane: Hand=['H8', 'CA'], Community=['S3', 'C3', 'D8'], Hand Strength=1, Action=call, Amount=0
+2024-12-29 12:30:47,940 - Decision made by Kane: Hand=['H8', 'CA'], Community=['S3', 'C3', 'D8', 'CQ'], Hand Strength=2, Action=raise, Amount=1880
