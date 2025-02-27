@@ -1,7 +1,14 @@
-PyPokerEngine
-tensorflow
-numpy
-matplotlib
+# Core Dependencies
+PyPokerEngine==1.0.1
+treys==0.1.8
+
+# Machine Learning and Data Processing (For Abel)
+tensorflow==2.14.1
+numpy==1.24.2
+matplotlib==3.7.1
 
 
-##Install dependencies with: pip install -r requirements.txt
+# Testing Framework
+pytest==7.3.0
+
+## pip install -r requirements.txt
