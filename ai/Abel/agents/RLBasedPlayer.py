@@ -1,4 +1,3 @@
-# ai/Abel/agents/RLBasedPlayer.py
 import os
 import numpy as np
 import random
@@ -6,6 +5,8 @@ import logging
 from collections import deque
 from pypokerengine.players import BasePokerPlayer
 from ai.Abel.models.DQN import DQN
+from ai.Abel.agents.CFRPlayer import CFRPlayer  # Import CFR module
+from ai.Abel.utils.state_encoder import encode_state  # Import state encoding
 
 class RLBasedPlayer(BasePokerPlayer):
     def __init__(self, state_size, action_size, model_path="models/abel_model.h5"):
@@ -22,6 +23,8 @@ class RLBasedPlayer(BasePokerPlayer):
         self.target_model = DQN(state_size, action_size)
         self.target_model.model.set_weights(self.model.model.get_weights())
         self.model_path = model_path
+        self.cfr_player = CFRPlayer()  # CFR for bluffing
+        self.opponent_history = []  # Tracks opponent actions
 
         logging.info("Initializing RLBasedPlayer...")
         self.load_model()
@@ -45,7 +48,7 @@ class RLBasedPlayer(BasePokerPlayer):
         self.memory.append((state, action, reward, next_state, done))
 
     def act(self, state, valid_actions):
-        """ Chooses an action using an epsilon-greedy policy. """
+        """ Chooses an action using an epsilon-greedy policy (DQN). """
         if np.random.rand() <= self.epsilon:
             return random.choice(valid_actions)
         state = np.reshape(state, [1, self.state_size])
@@ -78,10 +81,20 @@ class RLBasedPlayer(BasePokerPlayer):
             self.epsilon *= self.epsilon_decay
 
     def declare_action(self, valid_actions, hole_card, round_state):
-        """ Implements required method for PyPokerEngine. """
+        """ Uses CFR for bluffing and DQN for tactical play. """
         logging.info(f"Valid actions: {valid_actions}")
-        state = np.zeros(self.state_size)  # Placeholder for now, proper encoding needed
-        chosen_action = self.act(state, [action["action"] for action in valid_actions])
+        state = encode_state(hole_card, round_state)  # Proper game state encoding
+        state_key = str(round_state)  # Simplified state representation
+        action_idx = None
+
+        # **CFR for bluffing in early rounds**
+        if len(round_state["community_card"]) <= 3:
+            chosen_action = self.cfr_player.select_action(state_key, [a["action"] for a in valid_actions])
+        else:
+            # **DQN for postflop play**
+            chosen_action = self.act(state, [a["action"] for a in valid_actions])
+            action_idx = [a["action"] for a in valid_actions].index(chosen_action)
+
         amount = 0
         for action in valid_actions:
             if action["action"] == chosen_action:
@@ -89,25 +102,13 @@ class RLBasedPlayer(BasePokerPlayer):
                 if isinstance(amount, dict):  # Handle min-max raises
                     amount = amount["min"]
                 break
+
+        # **Track opponent actions for strategic adaptation**
+        self.opponent_history.append(round_state["action_histories"])
+
+        # **Update CFR regrets**
+        if action_idx is not None:
+            self.cfr_player.update_regrets(state_key, action_idx, reward=0)  # Reward to be calculated after round
+
         logging.info(f"Abel chose action: {chosen_action} with amount {amount}")
         return chosen_action, amount
-
-    def receive_game_start_message(self, game_info):
-        """ Handles game start event (needed for PyPokerEngine). """
-        logging.info(f"Game started with info: {game_info}")
-
-    def receive_round_start_message(self, round_count, hole_card, seats):
-        """ Handles round start event (needed for PyPokerEngine). """
-        logging.info(f"Round {round_count} started with hole cards: {hole_card}")
-
-    def receive_street_start_message(self, street, round_state):
-        """ Handles new betting street event (needed for PyPokerEngine). """
-        logging.info(f"New street: {street}")
-
-    def receive_game_update_message(self, action, round_state):
-        """ Handles game update event (needed for PyPokerEngine). """
-        logging.info(f"Game updated with action: {action}")
-
-    def receive_round_result_message(self, winners, hand_info, round_state):
-        """ Handles round result event (needed for PyPokerEngine). """
-        logging.info(f"Round ended. Winners: {winners}")
