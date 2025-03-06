@@ -9,7 +9,7 @@ from pypokerengine.api.game import setup_config, start_poker
 log_dir = "models/logs"
 logging.basicConfig(filename="abel_training.log", level=logging.INFO, format="%(asctime)s - %(message)s")
 
-def train_abel(num_games=1000):
+def train_abel(num_games=100000):
     state_size = 6
     action_size = 3
     abel = RLBasedPlayer(state_size, action_size)
