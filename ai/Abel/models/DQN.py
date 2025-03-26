@@ -11,7 +11,8 @@ class DQN:
     def build_model(self):
         """ Builds the deep learning model for Q-learning. """
         model = tf.keras.Sequential([
-            tf.keras.layers.Dense(128, activation="relu", input_dim=self.state_size),
+            tf.keras.Input(shape=(self.state_size,)),
+            tf.keras.layers.Dense(128, activation="relu"),
             tf.keras.layers.Dense(128, activation="relu"),
             tf.keras.layers.Dense(self.action_size, activation="linear"),
         ])
