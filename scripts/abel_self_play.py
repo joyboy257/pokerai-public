@@ -1,4 +1,4 @@
-# scripts/self_play.py
+# scripts/abel_self_play.py
 import os
 import logging
 import numpy as np
@@ -7,243 +7,169 @@ from datetime import datetime
 from pypokerengine.api.game import setup_config, start_poker
 from pypokerengine.players import BasePokerPlayer
 
-# Imports
 from ai.Abel.agents.RLBasedPlayer import RLBasedPlayer
-from ai.utils.hand_history_logger import HandHistoryLogger
-from ai.utils.training_metrics import TrainingMetricsTracker
-from ai.utils.hand_strength import HandStrengthCalculator
-from ai.utils.decision_evaluator import DecisionEvaluator
+from ai.Abel.utils.hand_history_logger import HandHistoryLogger
+from ai.Abel.utils.training_metrics import TrainingMetricsTracker
+from ai.Abel.utils.hand_strength import HandStrengthCalculator
+from ai.Abel.utils.decision_evaluator import DecisionEvaluator
 
-# Configure Timestamp and Directories
+# Setup directories
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-base_log_dir = "logs/training"
-log_dir = f"{base_log_dir}/{timestamp}"
-models_dir = "models/checkpoints"
+log_dir = f"logs/self_play_{timestamp}"
+model_dir = "models/checkpoints"
 os.makedirs(log_dir, exist_ok=True)
-os.makedirs(models_dir, exist_ok=True)
+os.makedirs(model_dir, exist_ok=True)
 
-# Configure Logging
+# Logging setup
 logging.basicConfig(
-    filename=f"{log_dir}/abel_training.log",
+    filename=f"{log_dir}/self_play.log",
     level=logging.INFO,
     format="%(asctime)s - %(message)s"
 )
 
-# Create a simple baseline player for evaluation
-class BaselinePlayer(BasePokerPlayer):
-    def declare_action(self, valid_actions, hole_card, round_state):
-        action = valid_actions[1]['action']  # Always call
-        return action, valid_actions[1]['amount']
-        
-    def receive_game_start_message(self, game_info): pass
-    def receive_round_start_message(self, round_count, hole_card, seats): pass
-    def receive_street_start_message(self, street, round_state): pass
-    def receive_game_update_message(self, action, round_state): pass
-    def receive_round_result_message(self, winners, hand_info, round_state): pass
+def train_abel(num_games=10000, eval_interval=500, save_interval=250):
+    logging.info(f"Starting self-play training for {num_games} games")
 
-def evaluate_performance(agent, num_eval_games=100):
-    """Evaluate agent performance against the baseline player."""
-    win_count = 0
-    total_profit = 0
-    
-    for _ in range(num_eval_games):
-        # Alternate positions for fairness
-        if _ % 2 == 0:
-            config = setup_config(max_round=5, initial_stack=1000, small_blind_amount=10)
-            config.register_player(name="Abel", algorithm=agent)
-            config.register_player(name="Baseline", algorithm=BaselinePlayer())
-        else:
-            config = setup_config(max_round=5, initial_stack=1000, small_blind_amount=10)
-            config.register_player(name="Baseline", algorithm=BaselinePlayer())
-            config.register_player(name="Abel", algorithm=agent)
-        
-        game_result = start_poker(config, verbose=0)
-        
-        # Find Abel's result
-        abel_player = next((p for p in game_result["players"] if p["name"] == "Abel"), None)
-        baseline_player = next((p for p in game_result["players"] if p["name"] == "Baseline"), None)
-        
-        if abel_player and baseline_player:
-            if abel_player["stack"] > baseline_player["stack"]:
-                win_count += 1
-            total_profit += abel_player["stack"] - 1000  # Initial stack was 1000
-    
-    win_rate = (win_count / num_eval_games) * 100
-    avg_profit = total_profit / num_eval_games
-    
-    return win_rate, avg_profit
-
-def train_abel(num_games=10000, save_interval=100, eval_interval=500):
-    """
-    Train Abel using self-play with improved tracking and analysis.
-    
-    Args:
-        num_games (int): Total number of games to play
-        save_interval (int): Interval to save model checkpoints
-        eval_interval (int): Interval to evaluate and log performance
-    """
-    print(f"Starting Abel training for {num_games} games...")
-    logging.info(f"Starting Abel training for {num_games} games")
-    
-    # Initialize our tracking/analysis tools
+    state_size, action_size = 6, 3
     hand_logger = HandHistoryLogger(log_dir=f"{log_dir}/hand_history")
     metrics_tracker = TrainingMetricsTracker(log_dir=log_dir, experiment_name="abel_self_play")
-    hand_strength_calc = HandStrengthCalculator()
     decision_eval = DecisionEvaluator(log_dir=f"{log_dir}/decisions")
-    
-    # Initialize Abel agents
-    state_size = 6
-    action_size = 3
-    abel_1 = RLBasedPlayer(state_size, action_size, model_path="models/abel_main.h5")
-    abel_2 = RLBasedPlayer(state_size, action_size, model_path="models/abel_opponent.h5")
-    
-    # Check if Abel has bluff tracking capabilities
-    has_bluff_tracking = hasattr(abel_1, 'get_bluff_success_rate')
-    
-    # Training metrics
-    win_counts = 0
-    total_profits = 0
-    
-    # Training loop
-    for game_number in range(num_games):
-        # Alternate positions for fair training
-        if game_number % 2 == 0:
-            config = setup_config(max_round=5, initial_stack=1000, small_blind_amount=10)
+
+    abel_1 = RLBasedPlayer(state_size, action_size, model_path="models/abel_main.h5", decision_evaluator=decision_eval)
+    abel_2 = RLBasedPlayer(state_size, action_size, model_path="models/abel_opponent.h5", decision_evaluator=decision_eval)
+    has_bluff_tracking = hasattr(abel_1, "get_bluff_success_rate")
+
+    wins, total_profit = 0, 0
+
+    for game in range(num_games):
+        config = setup_config(max_round=5, initial_stack=1000, small_blind_amount=10)
+        if game % 2 == 0:
             config.register_player(name="Abel_1", algorithm=abel_1)
             config.register_player(name="Abel_2", algorithm=abel_2)
-            first_player = "Abel_1"
         else:
-            config = setup_config(max_round=5, initial_stack=1000, small_blind_amount=10)
             config.register_player(name="Abel_2", algorithm=abel_2)
             config.register_player(name="Abel_1", algorithm=abel_1)
-            first_player = "Abel_2"
-        
-        # Play the game
+
+        abel_position = "SB" if game % 2 == 0 else "BB"
+        table_info = {
+            "table_id": f"self_play_game_{game}",
+            "small_blind": 10,
+            "big_blind": 20
+        }
+        player_info = [
+            {"name": "Abel_1", "position": abel_position, "stack": 1000},
+            {"name": "Abel_2", "position": "BB" if abel_position == "SB" else "SB", "stack": 1000}
+        ]
+
+        hand_logger.start_hand()
+        hand_logger.start_new_hand(table_info, player_info)
+
         game_result = start_poker(config, verbose=0)
-        
-        # Record game outcome
-        abel_1_player = next((p for p in game_result["players"] if p["name"] == "Abel_1"), None)
-        abel_2_player = next((p for p in game_result["players"] if p["name"] == "Abel_2"), None)
-        
-        if abel_1_player and abel_2_player:
-            # Track wins and profit for primary Abel
-            if abel_1_player["stack"] > abel_2_player["stack"]:
-                win_counts += 1
-            profit = abel_1_player["stack"] - 1000  # Initial stack was 1000
-            total_profits += profit
-            
-            # Record hand history (simplified for self-play)
-            if game_number % 10 == 0:  # Only record every 10th game to avoid excessive logging
-                try:
-                    # Create simplified hand data structure
-                    hand_data = {
-                        "hand_id": game_number,
-                        "player_info": [
-                            {"name": "Abel_1", "position": "SB" if first_player == "Abel_1" else "BB", "stack": 1000},
-                            {"name": "Abel_2", "position": "BB" if first_player == "Abel_1" else "SB", "stack": 1000}
-                        ],
-                        "streets": {
-                            "preflop": {"actions": [], "community_cards": []},
-                            "flop": {"actions": [], "community_cards": []},
-                            "turn": {"actions": [], "community_cards": []},
-                            "river": {"actions": [], "community_cards": []}
-                        },
-                        "results": {
-                            "winners": ["Abel_1" if abel_1_player["stack"] > abel_2_player["stack"] else "Abel_2"],
-                            "player_final_states": [
-                                {"name": "Abel_1", "stack": abel_1_player["stack"]},
-                                {"name": "Abel_2", "stack": abel_2_player["stack"]}
-                            ]
-                        }
-                    }
-                    hand_logger.log_hand_result(
-                        winners=["Abel_1" if abel_1_player["stack"] > abel_2_player["stack"] else "Abel_2"],
-                        pot_distribution={},
-                        player_final_states=[
-                            {"name": "Abel_1", "stack": abel_1_player["stack"]},
-                            {"name": "Abel_2", "stack": abel_2_player["stack"]}
-                        ]
-                    )
-                except Exception as e:
-                    logging.error(f"Error logging hand history: {e}")
-        
-        # Run evaluation at intervals
-        if game_number % eval_interval == 0 or game_number == num_games - 1:
-            # Evaluate against baseline
-            win_rate, avg_profit = evaluate_performance(abel_1, num_eval_games=100)
-            
-            # Get bluff success rate if available
-            bluff_rate = 0
-            if has_bluff_tracking:
-                try:
-                    bluff_rate = abel_1.get_bluff_success_rate()
-                except:
-                    bluff_rate = 0
-            
-            # Current training stats
-            current_win_rate = (win_counts / max(1, game_number + 1)) * 100
-            current_avg_profit = total_profits / max(1, game_number + 1)
-            
-            # Log metrics
-            metrics = {
-                "win_rate": win_rate,  # Against baseline
-                "avg_reward": avg_profit,  # Against baseline
-                "self_play_win_rate": current_win_rate,  # Self-play
-                "self_play_profit": current_avg_profit,  # Self-play
-                "exploration_rate": abel_1.epsilon,
-                "bluff_success_rate": bluff_rate,
-                "opponent": "baseline"  # For this evaluation
-            }
-            metrics_tracker.log_iteration(game_number, metrics)
-            
-            # Log progress
-            logging.info(f"Game {game_number}: Win Rate vs Baseline={win_rate:.2f}%, "
-                        f"Avg Profit={avg_profit:.2f}, Epsilon={abel_1.epsilon:.3f}")
-            
-            print(f"Game {game_number}/{num_games}: Win Rate vs Baseline={win_rate:.2f}%, "
-                 f"Self-play Win Rate={current_win_rate:.2f}%, Epsilon={abel_1.epsilon:.3f}")
-            
-            # Generate plots every few evaluations
-            if game_number % (eval_interval * 5) == 0 or game_number == num_games - 1:
-                try:
-                    metrics_tracker.plot_win_rate()
-                    metrics_tracker.plot_learning_metrics()
-                    if has_bluff_tracking:
-                        metrics_tracker.plot_playing_style_metrics()
-                except Exception as e:
-                    logging.error(f"Error generating plots: {e}")
-        
-        # Save model checkpoints
-        if game_number % save_interval == 0 or game_number == num_games - 1:
-            checkpoint_path = f"{models_dir}/abel_self_play_{game_number}.h5"
+
+        abel_player = next(p for p in game_result["players"] if p["name"] == "Abel_1")
+        opponent = next(p for p in game_result["players"] if p["name"] == "Abel_2")
+
+        profit = abel_player["stack"] - 1000
+        total_profit += profit
+        if abel_player["stack"] > opponent["stack"]:
+            wins += 1
+
+        # Log hand result every 10 games
+        if game % 10 == 0:
+            try:
+                hand_logger.log_hand_result(
+                    winners=[abel_player["name"] if abel_player["stack"] > opponent["stack"] else opponent["name"]],
+                    pot_distribution={},
+                    player_final_states=[
+                        {"name": abel_player["name"], "stack": abel_player["stack"]},
+                        {"name": opponent["name"], "stack": opponent["stack"]}
+                    ]
+                )
+            except Exception as e:
+                logging.warning(f"Hand logging failed: {e}")
+
+        # Evaluation + Metrics
+        if game % eval_interval == 0 or game == num_games - 1:
+            try:
+                decisions = decision_eval.get_decisions()
+                total_hand_strength = 0
+                raise_sizes = []
+                action_counts = {"fold": 0, "call": 0, "raise": 0}
+                pot_odds_calls = {"justified": 0, "unjustified": 0}
+
+                for d in decisions:
+                    chosen = d["chosen_action"]
+                    strength = d["hand_strength"]
+                    pot = d["pot_size"]
+                    is_bluff = d.get("is_bluff", False)
+
+                    total_hand_strength += strength
+                    if chosen == "raise":
+                        raise_sizes.append(pot)
+                    if chosen in action_counts:
+                        action_counts[chosen] += 1
+                    if pot > 0:
+                        if strength > 0.5:
+                            pot_odds_calls["justified"] += 1
+                        else:
+                            pot_odds_calls["unjustified"] += 1
+
+                avg_strength = total_hand_strength / max(1, len(decisions))
+                avg_raise = np.mean(raise_sizes) if raise_sizes else 0
+
+                metrics = {
+                    "win_rate": (wins / (game + 1)) * 100,
+                    "avg_reward": total_profit / (game + 1),
+                    "exploration_rate": abel_1.epsilon,
+                    "bluff_success_rate": abel_1.get_bluff_success_rate() if has_bluff_tracking else 0,
+                    "hand_strength_correlation": avg_strength,
+                    "raise_sizes": avg_raise,
+                    "action_frequency": action_counts,
+                    "pot_odds_calls": pot_odds_calls,
+                    "aggression_factor": abel_1.get_aggression_factor(),
+                    "fold_rate": abel_1.get_fold_rate(),
+                    "average_raise_size": abel_1.get_average_raise_size(),
+                    "opponent": "self-play"
+                }
+
+                metrics_tracker.log_iteration(game, metrics)
+                decision_eval.reset()
+            except Exception as e:
+                logging.warning(f"Failed to log metrics: {e}")
+
+        if game % save_interval == 0 or game == num_games - 1:
             try:
                 abel_1.save_model()
-                # Also save a numbered checkpoint
-                abel_1.model.save_model(checkpoint_path)
-                logging.info(f"Checkpoint saved: {checkpoint_path}")
+                ckpt_path = f"{model_dir}/abel_self_play_{game}.h5"
+                abel_1.model.save_model(ckpt_path)
+                logging.info(f"Saved checkpoint: {ckpt_path}")
             except Exception as e:
-                logging.error(f"Error saving model: {e}")
-        
-        # Decay exploration rates
+                logging.error(f"Error saving checkpoint: {e}")
+
         abel_1.adjust_epsilon()
         abel_2.adjust_epsilon()
+
+    # Final plots + summary
+    try:
+        metrics_tracker.plot_win_rate()
+        metrics_tracker.plot_learning_metrics()
+        if has_bluff_tracking:
+            metrics_tracker.plot_playing_style_metrics()
+        metrics_tracker.generate_training_summary()
+    except Exception as e:
+        logging.error(f"Final plot/gen error: {e}")
+
+    print("\n=== Self-Play Training Summary ===")
+    print(f"Games Played: {num_games}")
+    print(f"Abel Wins: {wins} ({(wins / num_games) * 100:.2f}%)")
+    print(f"Avg Profit: {total_profit / num_games:.2f}")
+    print(f"Final Epsilon: {abel_1.epsilon:.4f}")
+    print(f"Logs saved to: {log_dir}")
     
-    # Save final model
-    abel_1.save_model()
-    
-    # Generate final evaluation report
-    metrics_tracker.generate_training_summary()
-    
-    # Print training summary
-    print(f"\n=== Training Summary ===")
-    print(f"Total Games Played: {num_games}")
-    print(f"Final Win Rate vs Baseline: {win_rate:.2f}%")
-    print(f"Final Self-play Win Rate: {current_win_rate:.2f}%")
-    print(f"Final Exploration Rate: {abel_1.epsilon:.4f}")
-    print(f"Logs and checkpoints saved to {log_dir} and {models_dir}")
-    
+    if decision_eval:
+        decision_eval.save()
+        
     return abel_1
 
-# Run training if this script is executed directly
 if __name__ == "__main__":
-    trained_abel = train_abel(num_games=10000)
+    trained = train_abel(num_games=1000)

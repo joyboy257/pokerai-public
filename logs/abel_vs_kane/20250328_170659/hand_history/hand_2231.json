@@ -1,0 +1,55 @@
+{
+  "hand_id": 2231,
+  "timestamp": "2025-03-28T17:10:43.292431",
+  "table_info": {
+    "table_id": "abel_vs_kane_game_2030",
+    "small_blind": 10,
+    "big_blind": 20
+  },
+  "player_info": [
+    {
+      "name": "Abel",
+      "position": "SB",
+      "stack": 1000
+    },
+    {
+      "name": "Kane",
+      "position": "BB",
+      "stack": 1000
+    }
+  ],
+  "streets": {
+    "preflop": {
+      "actions": [],
+      "community_cards": []
+    },
+    "flop": {
+      "actions": [],
+      "community_cards": []
+    },
+    "turn": {
+      "actions": [],
+      "community_cards": []
+    },
+    "river": {
+      "actions": [],
+      "community_cards": []
+    }
+  },
+  "results": {
+    "winners": [
+      "Kane"
+    ],
+    "pot_distribution": {},
+    "player_final_states": [
+      {
+        "name": "Abel",
+        "stack": 0
+      },
+      {
+        "name": "Kane",
+        "stack": 2000
+      }
+    ]
+  }
+}

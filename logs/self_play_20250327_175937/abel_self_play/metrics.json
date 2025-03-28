@@ -1,0 +1,99 @@
+{
+  "iterations": [
+    0,
+    500
+  ],
+  "win_rates": [
+    0.0,
+    46.506986027944116
+  ],
+  "loss_values": [
+    null,
+    null
+  ],
+  "exploration_rates": [
+    1.0,
+    0.6063789448611848
+  ],
+  "avg_rewards": [
+    -60.0,
+    -2.7744510978043913
+  ],
+  "bluff_success_rates": [
+    0.0,
+    0.0
+  ],
+  "fold_rates": [
+    0.0,
+    0.0
+  ],
+  "aggression_factors": [
+    0,
+    0
+  ],
+  "custom_metrics": {
+    "hand_strength_correlation": [
+      0.0,
+      0.0
+    ],
+    "raise_sizes": [
+      0,
+      0
+    ],
+    "action_frequency": [
+      {
+        "fold": 0,
+        "call": 0,
+        "raise": 0
+      },
+      {
+        "fold": 0,
+        "call": 0,
+        "raise": 0
+      }
+    ],
+    "pot_odds_calls": [
+      {
+        "justified": 0,
+        "unjustified": 0
+      },
+      {
+        "justified": 0,
+        "unjustified": 0
+      }
+    ]
+  },
+  "action_frequencies": [
+    {
+      "fold": 0,
+      "call": 0,
+      "raise": 0
+    },
+    {
+      "fold": 0,
+      "call": 0,
+      "raise": 0
+    }
+  ],
+  "raise_sizes": [
+    null,
+    0,
+    0
+  ],
+  "pot_odds_calls": [
+    {
+      "justified": 0,
+      "unjustified": 0
+    },
+    {
+      "justified": 0,
+      "unjustified": 0
+    }
+  ],
+  "hand_strength_correlations": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

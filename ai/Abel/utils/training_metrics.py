@@ -55,7 +55,11 @@ class TrainingMetricsTracker:
             "bluff_success_rates": [],
             "fold_rates": [],
             "aggression_factors": [],
-            "custom_metrics": {}
+            "custom_metrics": {},
+            "action_frequencies": [],          # List of dicts: {"fold": X, "call": Y, "raise": Z}
+            "raise_sizes": [],                 # Optional: track avg raise sizes (if accessible)
+            "pot_odds_calls": [],              # Dicts: {"justified": X, "unjustified": Y}
+            "hand_strength_correlations": []   # Numeric values per iteration
         }
         
         # Track opponent types
@@ -64,6 +68,7 @@ class TrainingMetricsTracker:
         # Initialize timing
         self.start_time = datetime.now()
         logging.info(f"Started training metrics tracking: {self.experiment_name}")
+
     
     def log_iteration(self, iteration, metrics_dict):
         """
@@ -78,7 +83,7 @@ class TrainingMetricsTracker:
         
         # Add standard metrics if available
         for metric_name in ["win_rate", "loss_value", "exploration_rate", "avg_reward",
-                           "bluff_success_rate", "fold_rate", "aggression_factor"]:
+                           "bluff_success_rate", "fold_rate", "aggression_factor", "raise_size",  "hand_strength_correlation"]:
             plural_name = f"{metric_name}s"
             if metric_name in metrics_dict:
                 self.metrics[plural_name].append(metrics_dict[metric_name])
@@ -86,7 +91,28 @@ class TrainingMetricsTracker:
                 # Keep arrays the same length by adding None
                 if len(self.metrics[plural_name]) < len(self.metrics["iterations"]):
                     self.metrics[plural_name].append(None)
-        
+
+        # Track action frequency metrics
+        if "action_frequency" in metrics_dict:
+            self.metrics["action_frequencies"].append(metrics_dict["action_frequency"])
+        else:
+            self.metrics["action_frequencies"].append(None)
+
+        if "raise_sizes" in metrics_dict:
+            self.metrics["raise_sizes"].append(metrics_dict["raise_sizes"])
+        else:
+            self.metrics["raise_sizes"].append(None)
+
+        if "pot_odds_calls" in metrics_dict:
+            self.metrics["pot_odds_calls"].append(metrics_dict["pot_odds_calls"])
+        else:
+            self.metrics["pot_odds_calls"].append(None)
+
+        if "hand_strength_correlation" in metrics_dict:
+            self.metrics["hand_strength_correlations"].append(metrics_dict["hand_strength_correlation"])
+        else:
+            self.metrics["hand_strength_correlations"].append(None)
+
         # Add opponent-specific metrics if available
         if "opponent" in metrics_dict:
             opponent = metrics_dict["opponent"]
@@ -441,7 +467,66 @@ class TrainingMetricsTracker:
                 }
                 
                 summary["metrics"][metric_name] = metric_summary
-        
+
+        # For hand strength correlations (numeric)
+        correlations = [v for v in self.metrics["hand_strength_correlations"] if v is not None]
+        if correlations:
+            summary["metrics"]["hand_strength_correlations"] = {
+                "min": min(correlations),
+                "max": max(correlations),
+                "mean": np.mean(correlations),
+                "median": np.median(correlations),
+                "std": np.std(correlations),
+                "first": correlations[0],
+                "last": correlations[-1]
+            }
+
+        # For raise sizes (assuming float values)
+        raise_sizes = [v for v in self.metrics["raise_sizes"] if v is not None]
+        if raise_sizes:
+            summary["metrics"]["raise_sizes"] = {
+                "min": min(raise_sizes),
+                "max": max(raise_sizes),
+                "mean": np.mean(raise_sizes),
+                "median": np.median(raise_sizes),
+                "std": np.std(raise_sizes),
+                "first": raise_sizes[0],
+                "last": raise_sizes[-1]
+            }
+
+        # For pot odds calls (categorical summary)
+        justified, unjustified = 0, 0
+        for entry in self.metrics["pot_odds_calls"]:
+            if entry:
+                justified += entry.get("justified", 0)
+                unjustified += entry.get("unjustified", 0)
+
+        if justified + unjustified > 0:
+            summary["metrics"]["pot_odds_calls"] = {
+                "justified": justified,
+                "unjustified": unjustified,
+                "justification_rate": justified / (justified + unjustified)
+            }
+
+        # For action frequency (aggregate and average over time)
+        action_totals = {"fold": 0, "call": 0, "raise": 0}
+        action_counts = 0
+
+        for entry in self.metrics["action_frequencies"]:
+            if entry:
+                for act in action_totals:
+                    action_totals[act] += entry.get(act, 0)
+                action_counts += 1
+
+        if action_counts > 0:
+            summary["metrics"]["action_frequencies"] = {
+                act: {
+                    "total": action_totals[act],
+                    "average_per_iteration": action_totals[act] / action_counts
+                }
+                for act in action_totals
+            }
+
         # Add opponent-specific summaries
         if self.opponent_metrics:
             summary["opponent_metrics"] = {}

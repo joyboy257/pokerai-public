@@ -11,9 +11,9 @@ from pypokerengine.api.game import setup_config, start_poker
 # Imports
 from ai.Abel.agents.RLBasedPlayer import RLBasedPlayer
 from ai.Kane.Kane import RuleBasedPlayer
-from ai.utils.hand_history_logger import HandHistoryLogger
-from ai.utils.opponent_analyzer import OpponentAnalyzer
-from ai.utils.decision_evaluator import DecisionEvaluator
+from ai.Abel.utils.hand_history_logger import HandHistoryLogger
+from ai.Abel.utils.opponent_analyzer import OpponentAnalyzer
+from ai.Abel.utils.decision_evaluator import DecisionEvaluator
 
 # Configure Timestamp and Directories
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

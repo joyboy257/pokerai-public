@@ -27,7 +27,7 @@ class HandHistoryLogger:
         # Set up logging
         self.logger = logging.getLogger("hand_history")
         self.logger.setLevel(logging.INFO)
-        
+
         # File handler
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         log_file = f"{log_dir}/hand_history_{timestamp}.log"
@@ -49,7 +49,17 @@ class HandHistoryLogger:
         
         # History storage
         self.hand_history = []
+
+        self._hand_started = False
     
+    def start_hand(self):
+        """
+        Mark the beginning of a hand explicitly for logging.
+        Required to ensure results are only logged after a hand has properly started.
+        """
+        self._hand_started = True
+        self.logger.info("start_hand() called. Flag set to True.")
+
     def start_new_hand(self, table_info, player_info):
         """
         Start recording a new hand.
@@ -150,9 +160,10 @@ class HandHistoryLogger:
             pot_distribution (dict): How the pot was distributed
             player_final_states (dict): Final states of all players
         """
-        if self.current_hand is None:
+        if self.current_hand is None or not getattr(self, "_hand_started", False):
             self.logger.warning("Attempted to log hand result without starting a hand")
             return
+
         
         result = {
             "winners": winners,
@@ -171,6 +182,8 @@ class HandHistoryLogger:
         self.hand_history.append(self.current_hand)
         self._save_hand_to_disk(self.current_hand)
         self.current_hand = None
+        self.logger.info("log_hand_result() completed. Resetting _hand_started flag.")
+        self._hand_started = False
     
     def _save_hand_to_disk(self, hand_data):
         """
@@ -339,6 +352,7 @@ if __name__ == "__main__":
             {"name": "Abel", "stack": 1240},
             {"name": "Kane", "stack": 760}
         ]
+
     )
     
     # Print stats

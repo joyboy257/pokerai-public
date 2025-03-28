@@ -9,16 +9,20 @@ def encode_state(hole_card, round_state):
     pot_odds = pot / max(1, player_stack)  # Prevent division by zero
 
     state = np.array([
-        len(hole_card),  # Number of hole cards
-        len(community_cards),  # Number of community cards
-        pot / 1000,  # Normalize pot size
-        player_stack / 1000,  # Normalize player stack
-        opponent_stack / 1000,  # Normalize opponent stack
-        pot_odds  # Pot odds
+        len(hole_card),
+        len(community_cards),
+        pot / 1000,
+        player_stack / 1000,
+        opponent_stack / 1000,
+        pot_odds
     ])
 
-    # Logging for debugging
-    with open("encoded_states_log.txt", "a") as f:
-        f.write(f"Encoded State: {state.tolist()}, Shape: {state.shape}\n")
+    # Safe Logging
+    try:
+        with open("encoded_states_log.txt", "a") as f:
+            f.write(f"Encoded State: {state.tolist()}, Shape: {state.shape}\n")
+    except OSError as e:
+        print(f"[Warning] Could not write encoded state: {e}")
 
     return state
+
