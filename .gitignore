@@ -1,71 +1,59 @@
-# Python
+# === Python cache & bytecode ===
 __pycache__/
 *.py[cod]
-*.so
-*.egg
-*.egg-info/
 *.pyo
 *.pyd
 
-# Virtual Environment
+# === Virtual Environments ===
 venv/
-ENV/
-env/
+.env/
 .venv/
+ENV/
 
-# Jupyter Notebooks
-.ipynb_checkpoints/
-
-# OS-Specific
+# === OS/System Files ===
 .DS_Store
 .MACOSX/
 
-# TensorFlow + Model Files
-*.h5
-*.pb
-*.ckpt
-saved_model/
-*.tflite
+# === Jupyter & Notebook Metadata ===
+.ipynb_checkpoints/
 
-# Logs & Output
+# === Logs, Debug, and Training Output ===
 logs/
 *.log
 *.txt
 *.out
-
-# Checkpoints & Experiment Artifacts
 checkpoints/
-*.ckpt.*
-*.weights.*
-
-# Training snapshots
 *.tmp
-tmp/
-
-# Misc
-*.swp
 *.bak
 
-# Git LFS note (optional)
-*.lfs
+# === Model files and weights ===
+*.h5
+*.pb
+*.ckpt
+*.tflite
+saved_model/
+*.weights.*
 
-# Internal/experimental files
-abel_q_table.json
-texasai.zip
-update_git.sh
-deploy_to_paperspace.sh
-project_structure.txt
+# === Build artifacts ===
+*.egg-info/
+*.egg
+*.so
+*.zip
+
+# === Ignore experimental/sensitive artifacts ===
 encoded_states_log.txt
+abel_training.log
+TexasAI.zip
+
+# === Ignore generated scripts or setup utilities (optional) ===
+deploy_to_paperspace.sh
 create_init_files.py
 final_evaluation.py
-abel_train.py
 
-# Folders
-/tests/
-/notebooks/
+# === Ignore notebooks and tests unless public ready ===
+notebooks/
+tests/
 
-# Virtual envs and cache
-venv/
-__pycache__/
-*.pyc
-.DS_Store
+# === IDE/Editor folders ===
+.vscode/
+.idea/
