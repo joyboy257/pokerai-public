@@ -48,3 +48,24 @@ tmp/
 
 # Git LFS note (optional)
 *.lfs
+
+# Internal/experimental files
+abel_q_table.json
+texasai.zip
+update_git.sh
+deploy_to_paperspace.sh
+project_structure.txt
+encoded_states_log.txt
+create_init_files.py
+final_evaluation.py
+abel_train.py
+
+# Folders
+/tests/
+/notebooks/
+
+# Virtual envs and cache
+venv/
+__pycache__/
+*.pyc
+.DS_Store
