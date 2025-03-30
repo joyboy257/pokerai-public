@@ -1,5 +1,0 @@
-Total Games Played: 10000
-Total Wins: 4994
-Win Rate: 49.94%
-Bluffing Frequency: 707069.40%
-Strategy Switches: 0
