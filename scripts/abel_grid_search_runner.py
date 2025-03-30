@@ -8,9 +8,7 @@ from ai.Abel.agents.RLBasedPlayer import RLBasedPlayer
 from pypokerengine.api.game import setup_config, start_poker
 from ai.Abel.utils.training_metrics import TrainingMetricsTracker
 
-# ========================
 # CLI Setup
-# ========================
 parser = argparse.ArgumentParser(
     description="Grid Search Runner: Tune Abel's hyperparameters via self-play and log performance metrics."
 )
@@ -19,9 +17,7 @@ parser.add_argument('--eval_every', type=int, default=500, help='Interval for in
 parser.add_argument('--output_dir', type=str, default="logs/grid_search", help='Base directory for logs (default: logs/grid_search)')
 args = parser.parse_args()
 
-# ========================
 # Grid Search Space
-# ========================
 grid = list(itertools.product(
     [0.99, 0.995, 0.999],  # epsilon_decay
     [0.001, 0.0005, 0.0001],  # learning_rate
@@ -30,9 +26,7 @@ grid = list(itertools.product(
     [50000, 100000]  # buffer_size
 ))
 
-# ========================
 # Grid Search Loop
-# ========================
 os.makedirs(args.output_dir, exist_ok=True)
 
 for idx, (eps_decay, lr, gamma, batch_size, buffer_size) in enumerate(grid):
@@ -61,9 +55,7 @@ for idx, (eps_decay, lr, gamma, batch_size, buffer_size) in enumerate(grid):
 
     metrics_tracker = TrainingMetricsTracker(log_dir=log_dir, experiment_name=experiment_name)
 
-    # ========================
     # Training Loop
-    # ========================
     win_count = 0
     total_rewards = 0
 
@@ -94,9 +86,7 @@ for idx, (eps_decay, lr, gamma, batch_size, buffer_size) in enumerate(grid):
         abel_1.adjust_epsilon()
         abel_2.adjust_epsilon()
 
-    # ========================
     # Final Metrics Logging
-    # ========================
     final_win_rate = (win_count / args.games) * 100
     avg_reward = total_rewards / args.games
 
