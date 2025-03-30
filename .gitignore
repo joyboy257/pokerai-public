@@ -1,4 +1,50 @@
-venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS-Specific
 .DS_Store
+.MACOSX/
+
+# TensorFlow + Model Files
+*.h5
+*.pb
+*.ckpt
+saved_model/
+*.tflite
+
+# Logs & Output
+logs/
+*.log
+*.txt
+*.out
+
+# Checkpoints & Experiment Artifacts
+checkpoints/
+*.ckpt.*
+*.weights.*
+
+# Training snapshots
+*.tmp
+tmp/
+
+# Misc
+*.swp
+*.bak
+
+# Git LFS note (optional)
+*.lfs
