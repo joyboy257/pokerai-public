@@ -21,13 +21,14 @@ ENV/
 logs/
 *.log
 *.txt
+!requirements.txt
 *.out
 checkpoints/
 *.tmp
 *.bak
 
 # === Model files and weights ===
-*.h5
+
 *.pb
 *.ckpt
 *.tflite
